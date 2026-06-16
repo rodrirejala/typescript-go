@@ -1,0 +1,30 @@
+//// [tests/cases/compiler/declarationEmitExpandoJsdocArrow.ts] ////
+
+=== declarationEmitExpandoJsdocArrow.ts ===
+/**
+ * JSDoc comment on ExpandoArrowInlineNamedExport
+ */
+export const ExpandoArrowInlineNamedExport = () => {};
+>ExpandoArrowInlineNamedExport : Symbol(ExpandoArrowInlineNamedExport, Decl(declarationEmitExpandoJsdocArrow.ts, 3, 12))
+
+ExpandoArrowInlineNamedExport.args = { num: 3 };
+>ExpandoArrowInlineNamedExport.args : Symbol(ExpandoArrowInlineNamedExport.args, Decl(declarationEmitExpandoJsdocArrow.ts, 3, 54))
+>ExpandoArrowInlineNamedExport : Symbol(ExpandoArrowInlineNamedExport, Decl(declarationEmitExpandoJsdocArrow.ts, 3, 12))
+>args : Symbol(ExpandoArrowInlineNamedExport.args, Decl(declarationEmitExpandoJsdocArrow.ts, 3, 54))
+>num : Symbol(num, Decl(declarationEmitExpandoJsdocArrow.ts, 4, 38))
+
+/**
+ * JSDoc comment on ExpandoArrowNamedExport
+ */
+const ExpandoArrowNamedExport = () => {};
+>ExpandoArrowNamedExport : Symbol(ExpandoArrowNamedExport, Decl(declarationEmitExpandoJsdocArrow.ts, 9, 5))
+
+ExpandoArrowNamedExport.args = { num: 3 };
+>ExpandoArrowNamedExport.args : Symbol(ExpandoArrowNamedExport.args, Decl(declarationEmitExpandoJsdocArrow.ts, 9, 41))
+>ExpandoArrowNamedExport : Symbol(ExpandoArrowNamedExport, Decl(declarationEmitExpandoJsdocArrow.ts, 9, 5))
+>args : Symbol(ExpandoArrowNamedExport.args, Decl(declarationEmitExpandoJsdocArrow.ts, 9, 41))
+>num : Symbol(num, Decl(declarationEmitExpandoJsdocArrow.ts, 10, 32))
+
+export { ExpandoArrowNamedExport };
+>ExpandoArrowNamedExport : Symbol(ExpandoArrowNamedExport, Decl(declarationEmitExpandoJsdocArrow.ts, 11, 8))
+

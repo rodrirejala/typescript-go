@@ -1,0 +1,38 @@
+//// [tests/cases/compiler/declarationEmitExpandoJsdocArrow.ts] ////
+
+=== declarationEmitExpandoJsdocArrow.ts ===
+/**
+ * JSDoc comment on ExpandoArrowInlineNamedExport
+ */
+export const ExpandoArrowInlineNamedExport = () => {};
+>ExpandoArrowInlineNamedExport : { (): void; args: { num: number; }; }
+>() => {} : { (): void; args: { num: number; }; }
+
+ExpandoArrowInlineNamedExport.args = { num: 3 };
+>ExpandoArrowInlineNamedExport.args = { num: 3 } : { num: number; }
+>ExpandoArrowInlineNamedExport.args : { num: number; }
+>ExpandoArrowInlineNamedExport : { (): void; args: { num: number; }; }
+>args : { num: number; }
+>{ num: 3 } : { num: number; }
+>num : number
+>3 : 3
+
+/**
+ * JSDoc comment on ExpandoArrowNamedExport
+ */
+const ExpandoArrowNamedExport = () => {};
+>ExpandoArrowNamedExport : { (): void; args: { num: number; }; }
+>() => {} : { (): void; args: { num: number; }; }
+
+ExpandoArrowNamedExport.args = { num: 3 };
+>ExpandoArrowNamedExport.args = { num: 3 } : { num: number; }
+>ExpandoArrowNamedExport.args : { num: number; }
+>ExpandoArrowNamedExport : { (): void; args: { num: number; }; }
+>args : { num: number; }
+>{ num: 3 } : { num: number; }
+>num : number
+>3 : 3
+
+export { ExpandoArrowNamedExport };
+>ExpandoArrowNamedExport : { (): void; args: { num: number; }; }
+
